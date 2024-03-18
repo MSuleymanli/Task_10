@@ -1,0 +1,284 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 200px;
+	text-align: center;
+}
+
+.button i {
+	font-size: 40px;
+	padding-top: 30px;
+}
+
+.promotion {
+	width: 100%;
+	/* height: 100vh; */
+
+	background: linear-gradient(
+			61deg,
+			rgba(28, 28, 29, 0.368) 0%,
+			rgba(1, 1, 1, 0.264) 100%
+		),
+		url('https://www.thehousedesigners.com/images/plans/01/URD/bulk/6583/the-destination-front-rendering_m.webp');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* filter: brightness(0.5); */
+}
+
+.pr_h1 {
+	/* background-color: red; */
+	text-align: center;
+	padding: 300px 350px;
+	color: white;
+	font-size: 50px;
+	filter: brightness(5);
+}
+
+.welcome {
+	/* background-color: red; */
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 100px;
+}
+
+.welcome_h1 {
+	width: 100%;
+	font-size: 40px;
+}
+
+.welcome_p {
+	width: 100%;
+	font-size: 20px;
+}
+
+.wrapper {
+	width: min(1350px, 100% - 50px);
+	margin-inline: auto;
+}
+
+.galery {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 390px 390px;
+	gap: 30px;
+}
+
+.wrapper .galery .galery-item-1 p {
+	color: white;
+	position: absolute;
+}
+
+.galery-item-1 {
+	grid-column: 1/9;
+}
+
+.galery-item-2 {
+	grid-column: 9/13;
+}
+
+.galery-item-3 {
+	grid-column: 1/5;
+}
+
+.galery-item-4 {
+	grid-column: 5/8;
+}
+
+.galery-item-5 {
+	grid-column: 8/13;
+}
+
+.galery img,
+.galery video {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+}
+
+.galery-latest {
+	grid-column: 1/13;
+	padding: 10px;
+	font-size: 25px;
+}
+
+.galery-latest a {
+	color: black;
+}
+
+.about {
+	background-color: #222222;
+	width: 100%;
+	padding: 40px 80px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.about h2 {
+	color: #eaffff;
+}
+
+.about p {
+	color: #99978e;
+}
+
+.client {
+	padding: 40px 80px;
+}
+
+.client_about {
+	display: flex;
+	justify-content: space-around;
+}
+
+.client {
+	width: 100%;
+	background-color: #fafafa;
+}
+
+.client_cards {
+	width: 100%;
+	/* height: 100px; */
+	background-color: #fafafa;
+	padding: 40px 80px;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.card {
+	width: 18%;
+	height: 200px;
+	background-color: #ffffff;
+}
+
+.card img {
+	/* background-color: rgb(87, 87, 87); */
+	width: 100%;
+	height: 200px;
+
+	/* top: 0px;
+ left: 0px; */
+}
+
+.news {
+	width: 100%;
+	background-color: #ededed;
+	padding: 30px 100px;
+	/* display: none; */
+}
+
+h4 {
+	transition: 1s;
+}
+
+h4:hover {
+	color: #f9c74f;
+	cursor: pointer;
+}
+
+.news_about {
+	background-color: teal;
+	display: flex;
+	justify-content: space-between;
+}
+
+.news_cards {
+	/* background-color: red; */
+	padding: 40px 0px;
+	display: flex;
+	/* gap: 50px; */
+}
+
+.news_cards h2 {
+	padding: 40px 0px;
+}
+
+.d .d_p {
+	padding: 40px 0px;
+}
+
+.news_card {
+	width: 80%;
+	display: flex;
+	padding: 20px;
+}
+
+.news_card img {
+	width: 200px;
+	height: 100px;
+	padding-right: 20px;
+	transition: 1s;
+	/* padding-bottom: 30px; */
+}
+
+.news_cards img:hover {
+	filter: opacity(25%);
+}
+
+.news_link {
+	padding-top: 50px;
+	font-size: 30px;
+}
+
+.news_link a {
+	color: black;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer_about p {
+	font-size: 20px;
+}
+
+.footer_link ul {
+	display: flex;
+	gap: 30px;
+}
+
+.footer i {
+	font-size: 25px;
+	transition: 1s;
+}
+
+.footer i:hover {
+	transform: scale(1.5);
+}
+
+.footer_link a {
+	font-size: 20px;
+	color: black;
+	position: relative;
+}
+
+.footer_link a::before {
+	content: '';
+	width: 100%;
+	height: 3px;
+	background-color: rgb(142, 142, 167);
+	position: absolute;
+	bottom: 0;
+	left: -100%;
+	transition: 1s;
+}
+
+.footer_link a:hover::before {
+	left: 0;
+}
+
+.footer_link ul li {
+	overflow: hidden;
+}
